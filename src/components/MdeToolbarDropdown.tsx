@@ -114,6 +114,7 @@ export class MdeToolbarDropdown extends React.Component<HeaderItemDropdownProps,
                     }}
                     onClick={this.handleClick}
                     disabled={readOnly}
+                    tabIndex={-1}
                 >
                     {buttonContent}
                 </button>

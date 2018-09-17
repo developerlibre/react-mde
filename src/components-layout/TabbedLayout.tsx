@@ -57,6 +57,7 @@ export class TabbedLayout extends React.Component<LayoutProps, {}> {
                             type="button"
                             className={styleTabCode}
                             onClick={() => this.setState({tab: TAB_CODE})}
+                            tabIndex={-1}
                         >
                             Code
                         </button>
@@ -64,6 +65,7 @@ export class TabbedLayout extends React.Component<LayoutProps, {}> {
                             type="button"
                             className={styleTabPreview}
                             onClick={() => this.setState({tab: TAB_PREVIEW})}
+                            tabIndex={-1}
                         >
                             Preview
                         </button>
