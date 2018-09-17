@@ -6,7 +6,6 @@ export interface MdeToolbarButtonProps {
     buttonContent: React.ReactNode;
     onClick: React.MouseEventHandler<any>;
     readOnly: boolean;
-    type: button;
 }
 
 export const MdeToolbarButton: React.SFC<MdeToolbarButtonProps> = (props) => {
@@ -18,6 +17,8 @@ export const MdeToolbarButton: React.SFC<MdeToolbarButtonProps> = (props) => {
                 ...buttonProps, ...{
                     onClick,
                     disabled: readOnly,
+                    tabIndex: -1,
+                    type: "button",
                 },
             }, buttonContent)}
         </li>
